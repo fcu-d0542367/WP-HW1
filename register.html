@@ -4,51 +4,50 @@
     <meta charset="utf-8"/>
     <title>register</title>
     <style>
-      /*.text-right {
-        width: 20%;
+      lable {
+        margin-right: 32px;
       }
-      input[type=text] {
-        float: right;
+      select {
+        margin-left: 32px;
       }
-      input[type=password] {
-        float: right;
-      }*/
+      .need-left {
+        margin-left: 68px;
+      }
     </style>
   </head>
 
   <body>
-    <div class="text-right">
 
       <h1>使用者註冊</h1>
 
       <form method="post" action="">
-        <p><lable>帳號</lable>
+        <p><lable class="need">帳號  </lable>
           <input name="account" type="text" size="25" maxlength="25" placeholder="請輸入您的帳號">
         </p>
-        <p><lable>密碼</lable>
+        <p><lable class="need">密碼  </lable>
           <input name="pw" type="password" size="25" maxlength="25">
         </p>
-        <p><lable>電子郵件</lable>
+        <p><lable>電子郵件
           <input name="email" type="text" size="25" placeholder="請輸入您的電子郵件">
-        </p>
-
-    </div>
-
-      <p><lable>生日
+        </lable></p>
+      <p><lable class="need">生日</lable>
         <input name="bthd" type="date" size="25">
-      </lable></p>
-      <p><lable>性別
+      </p>
+
+      <p><lable>性別</lable>
         <input name="sex" type="radio" value="男">男
         <input name="sex" type="radio" value="女">女
         <input name="sex" type="radio" value="其他">其他
-      </lable></p>
-      <p><lable>喜好
+      </p>
+      <p><lable>喜好</lable>
         <input name="hobbies" type="checkbox" value="打球">打球
         <input name="hobbies" type="checkbox" value="打電動">打電動
         <input name="hobbies" type="checkbox" value="購物">購物
         <input class="c1" name="hobbies" type="checkbox" value="其他">其他
-      </lable></p>
-      <p><label>年級
+      </p>
+
+
+      <p><label>年級</lable>
         <select>
           <option value="大一">大一</option>
           <option value="大二">大二</option>
@@ -56,8 +55,8 @@
           <option value="大四">大四</option>
           <option value="其他">其他</option>
         </select>
-      </lable></p>
-      <input type="submit" value="送出">
+      </p>
+      <input type="submit" value="送出" class="need-left">
       <input type="reset">
 
     </form>
